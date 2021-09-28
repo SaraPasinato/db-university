@@ -33,3 +33,9 @@ WHERE `level` = 'magistrale';
 
 SELECT DISTINCT COUNT(*) AS `tot_dipartiments`
 FROM `departments`;
+
+--!8) Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
+
+SELECT `name`,`surname`
+FROM `teachers`
+WHERE `phone` IS NULL;
