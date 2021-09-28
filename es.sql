@@ -23,3 +23,10 @@ WHERE `period` = 'I semestre' AND `year`=1;
 SELECT `course_id`,`date`,`hour`
 FROM `exams`
 WHERE `date` = '2020/06/20' AND hour >'14:00';
+
+--!6) Selezionare tutti i corsi di laurea magistrale (38)
+SELECT DISTINCT `name`,`level`
+FROM `degrees`
+WHERE `level` = 'magistrale';
+
+--!7) Da quanti dipartimenti è composta l'universita?
