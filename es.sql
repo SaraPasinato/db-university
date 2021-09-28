@@ -29,4 +29,7 @@ SELECT DISTINCT `name`,`level`
 FROM `degrees`
 WHERE `level` = 'magistrale';
 
---!7) Da quanti dipartimenti è composta l'universita?
+--!7) Da quanti dipartimenti è composta l'universita? (12)
+
+SELECT DISTINCT COUNT(*) AS `tot_dipartiments`
+FROM `departments`;
